@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        // Пункт 1
+        String myString = new String("I study Basic Java!");
+
+        // Пункт 3
+        char secondLastChar = myString.charAt(myString.length() - 2);
+        System.out.println("Предпоследний символ: " + secondLastChar);
+
+        // Пункт 4
+        boolean containsJava = myString.contains("Java");
+        System.out.println("Содержит 'Java': " + containsJava);
+
+        // Пункт 5
+        String subStringJava = myString.substring(myString.indexOf("Java"), myString.indexOf("Java") + 4);
+        System.out.println("Вырезанная строка: " + subStringJava);
+
+        // Пункт 6
+        String replacedString = myString.replace('a', 'o');
+        System.out.println("Строка после замены 'a' на 'o': " + replacedString);
+
+        // Пункт 7
+        String upperCaseString = myString.toUpperCase();
+        System.out.println("Строка в верхнем регистре: " + upperCaseString);
+
+        // Пункт 8
+        String lowerCaseString = myString.toLowerCase();
+        System.out.println("Строка в нижнем регистре: " + lowerCaseString);
+    }
+}
